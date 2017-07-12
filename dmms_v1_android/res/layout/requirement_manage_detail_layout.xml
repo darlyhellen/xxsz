@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xiangxun.xacity.view.TabTopView
+        android:id="@+id/tabtopView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_title" />
+
+    <LinearLayout
+        android:id="@+id/tabBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_padding5"
+        android:layout_marginLeft="@dimen/margin_padding5"
+        android:layout_marginRight="@dimen/margin_padding5"
+        android:background="@drawable/bg_line_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_padding5" >
+
+        <TextView
+            android:id="@+id/tabBottomview_submit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding5"
+            android:layout_marginRight="@dimen/margin_padding3"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line_bule"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding5"
+            android:text="提交审核"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:id="@+id/tabBottomview_left_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding5"
+            android:layout_marginRight="@dimen/margin_padding3"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line_orange"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding5"
+            android:text="审核"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:id="@+id/tabBottomview_right_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line_grey"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding5"
+            android:text="驳回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize15" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tabBottomView"
+        android:layout_below="@id/tabtopView"
+        android:measureAllChildren="false" >
+
+        <include layout="@layout/mareriel_manage_detail_item_layout" />
+
+        <ListView
+            android:id="@+id/xlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="2.0dp"
+            android:listSelector="@color/transparent_white"
+            android:padding="@dimen/margin_padding5"
+            android:scrollbars="@null" />
+
+        <ListView
+            android:id="@+id/xlistview01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="2.0dp"
+            android:listSelector="@color/transparent_white"
+            android:padding="@dimen/margin_padding5"
+            android:scrollbars="@null" />
+
+        <include layout="@layout/no_data" />
+    </ViewFlipper>
+
+</RelativeLayout>

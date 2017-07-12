@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/tv_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="挖占管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/road_excavate_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="道路挖掘管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/road_spend_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="道路占用管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/road_spend_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="占道街具管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="查询管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/delay_projace_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="延期项目查询"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/survey_info_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="勘察信息查询"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/change_state_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_padding8"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="更改状态查询"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="挖占统计"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/start_area_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="挖占统计"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/return_area_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="退让面积统计"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="单位管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_padding8"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/apply_organization_ledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="申请单位档案"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/construction_organization_ledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="施工单位档案"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

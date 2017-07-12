@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_map_click_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_popup_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_padding10" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="申请单位: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_org_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_20B2AA"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="占用类别: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_occupy_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="工单状态: "
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_occupy_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:background="@drawable/bg_line_lv"
+                android:maxWidth="145.0dp"
+                android:paddingBottom="@dimen/margin_padding2"
+                android:paddingLeft="@dimen/margin_padding5"
+                android:paddingRight="@dimen/margin_padding5"
+                android:paddingTop="@dimen/margin_padding2"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="5.0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_padding10"
+        android:background="@drawable/map_arrows_right_normal"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

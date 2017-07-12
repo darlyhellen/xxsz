@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/occupy_apply_archive_search_layout" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="@dimen/margin_padding10"
+        android:background="@drawable/btn_selecter_register"
+        android:text="@string/search_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18" />
+
+</LinearLayout>

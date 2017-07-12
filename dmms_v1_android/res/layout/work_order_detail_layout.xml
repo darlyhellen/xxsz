@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xiangxun.xacity.view.TabTopView
+        android:id="@+id/tabtopView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_title" />
+
+    <ViewFlipper
+        android:id="@+id/order_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/wait_new_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="新增进展"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wait_order_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="工单反馈"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wait_order_banl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="办理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wait_order_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="退回"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wait_order_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="现场说明"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wait_order_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="工单下发"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/check_order_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="新增进展"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/check_order_banl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="办理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/reminder_order_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="新增进展"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reminder_order_modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="工单修改"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reminder_order_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="工单反馈"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reminder_order_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="闭合"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reminder_order_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="现场说明"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/already_order_diffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="设置难点"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/already_order_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="闭合"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/already_order_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="重新办理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/close_order_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="新增进展"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/close_order_diffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="设置难点"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/close_order_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="重新办理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/close_order_verfy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding2"
+                android:paddingRight="@dimen/margin_padding2"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="工单审核"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding2"
+            android:layout_marginLeft="@dimen/margin_padding2"
+            android:layout_marginRight="@dimen/margin_padding2"
+            android:background="@drawable/bg_line"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_padding5"
+            android:paddingLeft="@dimen/margin_padding2"
+            android:paddingRight="@dimen/margin_padding2"
+            android:paddingTop="@dimen/margin_padding5" >
+
+            <TextView
+                android:id="@+id/change_order_diffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_line_bule"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding8"
+                android:paddingLeft="@dimen/margin_padding5"
+                android:paddingRight="@dimen/margin_padding5"
+                android:paddingTop="@dimen/margin_padding8"
+                android:text="设置难点"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/order_state"
+        android:layout_below="@id/tabtopView" >
+
+        <include layout="@layout/work_order_detail_item_layout" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+
+            <com.xiangxun.xacity.view.photoview.HackyViewPager
+                android:id="@+id/vp_phone_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_place_point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin_padding23"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/xlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="2.0dp"
+            android:listSelector="@color/transparent_white"
+            android:padding="@dimen/margin_padding5"
+            android:scrollbars="@null" />
+
+        <include layout="@layout/no_data" />
+    </ViewFlipper>
+
+</RelativeLayout>

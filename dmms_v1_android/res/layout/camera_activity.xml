@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <SurfaceView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_hide"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/vp_back"
+            android:paddingTop="@dimen/margin_padding5"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_open"
+        android:layout_width="50dp"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/icon_open"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layoutSize50"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/camera_back"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_padding15"
+            android:background="@drawable/publish_click_selector"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding10"
+            android:text="@string/dialog_but1"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/textSize15" />
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="@dimen/imageSize36"
+            android:layout_height="@dimen/imageSize36"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/camera_selector" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_padding15"
+            android:background="@drawable/publish_click_selector"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding10"
+            android:text="@string/btn_ok"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/textSize15" />
+    </RelativeLayout>
+
+</RelativeLayout>

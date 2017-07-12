@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TimeLineView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TimeBarHorizontalScrollView
+        android:id="@+id/TimeBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#18222a"
+            android:orientation="horizontal" >
+
+            <com.xiangxun.xacity.view.TimeLineView
+                android:id="@+id/TimeLineBar"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                TimeLineView:TimeScaleContentWidth="8dp"
+                TimeLineView:TimeScaleDateText="2013-1-9"
+                TimeLineView:TimeScaleLineColor="@color/greenYellow"
+                TimeLineView:TimeScaleLinePaddingBottom="1dp"
+                TimeLineView:TimeScaleLinePaddingLeft="5dp"
+                TimeLineView:TimeScaleLinePaddingRight="5dp"
+                TimeLineView:TimeScaleLinePaddingTop="1dp"
+                TimeLineView:TimeScaleLineWidth="2dp"
+                TimeLineView:TimeScaleTextColor="@color/white"
+                TimeLineView:TimeScaleTextPaddingTop="2dp"
+                TimeLineView:TimeScaleTextSize="@dimen/textSize18"
+                TimeLineView:TimeScaleTextStyle="normal"
+                TimeLineView:TimeScaleTimeText="00:00:00"
+                TimeLineView:TimeScaleUnitMarkColor="#ffffff"
+                TimeLineView:TimeScaleUnitMarkHeight="2dp"
+                TimeLineView:TimeScaleUnitMarkWidth="1dp"
+                TimeLineView:TimeScaleUnitPaddingBottom="10dp"
+                TimeLineView:TimeScaleUnitPaddingTop="30dp"
+                TimeLineView:TimeScaleUnitTextColor="#ffffff"
+                TimeLineView:TimeScaleUnitTextSize="@dimen/textSize14"
+                TimeLineView:TimeScaleUnitTextStyle="normal"
+                TimeLineView:TimeScaleUnitValue="120px" />
+        </LinearLayout>
+    </com.xiangxun.xacity.view.TimeBarHorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_padding10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_padding5" >
+
+                <LinearLayout
+                    android:id="@+id/ll_device_purchase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/purchase_apply"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="采购申请"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:id="@+id/device_purchases_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_device_scrap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/scrap_apply"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="报废申请"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:id="@+id/device_scrap_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding5"
+                android:paddingTop="@dimen/margin_padding10" >
+
+                <LinearLayout
+                    android:id="@+id/ll_device_maintain_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/maintain_plan"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="维修计划"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:id="@+id/device_repair_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_device_accid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/accident_report"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="事故报告"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:id="@+id/device_accidents_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding5"
+                android:paddingTop="@dimen/margin_padding10" >
+
+                <LinearLayout
+                    android:id="@+id/ll_device_insurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/device_insurance"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="设备保险预警"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:id="@+id/device_insurance_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding5"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding5"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="@dimen/layoutSize60"
+                        android:layout_height="@dimen/layoutSize60"
+                        android:src="@drawable/device_insurance"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="维修计划"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding5"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/textSize16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:choiceMode="singleChoice" >
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

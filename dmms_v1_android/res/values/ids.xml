@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="comment_title" type="id">false</item>
+    <item name="expandable_toggle_button" type="id"/>
+    <item name="expandable" type="id"/>
+    <item name="rightlist_obj" type="id"/>
+    <item name="item_id" type="id"/>
+    <item name="item_url" type="id"/>
+    <item name="tv_device_menu01" type="id"/>
+    <item name="tv_device_menu02" type="id"/>
+    <item name="tv_device_menu03" type="id"/>
+    <item name="tv_device_menu04" type="id"/>
+    <item name="tv_device_menu05" type="id"/>
+    <item name="ll_device_menu01" type="id"/>
+    <item name="ll_device_menu02" type="id"/>
+    <item name="ll_device_menu03" type="id"/>
+    <item name="ll_device_menu04" type="id"/>
+    <item name="ll_device_menu05" type="id"/>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:measureAllChildren="false" >
+
+                <include layout="@layout/device_manage_search_operator_layout" />
+
+                <include layout="@layout/device_manage_search_ledger_layout" />
+
+                <include layout="@layout/device_manage_search_salfe_layout" />
+
+                <include layout="@layout/device_manage_search_dispatch_layout" />
+
+                <include layout="@layout/device_manage_search_record_layout" />
+
+                <include layout="@layout/device_manage_search_verification_layout" />
+
+                <include layout="@layout/device_manage_search_check_record_layout" />
+
+                <include layout="@layout/device_manage_search_utilization_layout" />
+
+                <include layout="@layout/device_manage_search_month_report_layout" />
+
+                <include layout="@layout/device_manage_search_insurance_layout" />
+            </ViewFlipper>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_below="@id/viewFlipper"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/margin_padding10"
+                android:background="@drawable/btn_selecter_register"
+                android:text="@string/search_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize18" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

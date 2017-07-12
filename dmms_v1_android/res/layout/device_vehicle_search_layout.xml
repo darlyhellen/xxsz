@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_padding5"
+            android:text="资产编号:"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/textSize16" />
+
+        <EditText
+            android:id="@+id/et_device_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入资产编号"
+            android:inputType="text"
+            android:paddingBottom="@dimen/margin_padding15"
+            android:paddingTop="@dimen/margin_padding15"
+            android:text=""
+            android:textColorHint="#b4b4b4"
+            android:textSize="@dimen/textSize14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_padding5"
+            android:text="车牌号码:"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/textSize16" />
+
+        <EditText
+            android:id="@+id/et_vehicle_plate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入车牌号码"
+            android:inputType="text"
+            android:maxLength="11"
+            android:paddingBottom="@dimen/margin_padding15"
+            android:paddingTop="@dimen/margin_padding15"
+            android:text=""
+            android:textColorHint="#b4b4b4"
+            android:textSize="@dimen/textSize14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="@dimen/margin_padding10"
+        android:background="@drawable/btn_selecter_register"
+        android:text="@string/search_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize18"
+        android:visibility="visible" />
+
+</LinearLayout>

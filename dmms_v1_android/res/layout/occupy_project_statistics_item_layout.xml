@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:occupy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_padding5"
+    android:background="@drawable/publish_item_all_background"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_padding5" >
+
+    <TextView
+        android:id="@+id/tv_project_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding5"
+        android:layout_marginLeft="@dimen/margin_padding5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize16" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/full_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:text="已开工"
+            android:textColor="#FFFC00D1"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="#FFFC00D1" />
+
+        <TextView
+            android:id="@+id/tv_project_start"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#FFFC00D1"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="#FFFC00D1" />
+
+        <com.xiangxun.xacity.view.HorizontalProgressBarWithNumber
+            android:id="@+id/progress_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:progress="0"
+            occupy:progress_text_size="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/full_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:text="已维护"
+            android:textColor="#ff2903FC"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="#ff2903FC" />
+
+        <TextView
+            android:id="@+id/tv_project_weihu"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff2903FC"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="#ff2903FC" />
+
+        <com.xiangxun.xacity.view.HorizontalProgressBarWithNumber
+            android:id="@+id/progress_weihu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:progress="0"
+            occupy:progress_text_color="#ff2903FC"
+            occupy:progress_text_size="18dp"
+            occupy:progress_unreached_color="#ffBCB4E8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/full_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding5"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:text="已超期"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_project_yanqi"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textSize16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/margin_padding5"
+            android:background="@color/red" />
+
+        <com.xiangxun.xacity.view.HorizontalProgressBarWithNumber
+            android:id="@+id/progress_yanqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:progress="0"
+            occupy:progress_text_color="@color/red"
+            occupy:progress_text_size="18dp"
+            occupy:progress_unreached_color="#ffAFF2D6" />
+    </LinearLayout>
+
+</LinearLayout>

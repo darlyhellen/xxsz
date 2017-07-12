@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ViewFlipper
+        android:id="@+id/vf_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.xiangxun.xacity.view.itemexpandable.XActionSlideExpandableListView
+            android:id="@+id/elv_mine_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <include layout="@layout/loading" />
+
+        <include layout="@layout/no_data" />
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xiangxun.xacity.view.TabTopView
+        android:id="@+id/tabtopView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_title" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabtopView"
+        android:measureAllChildren="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureAllChildren="false" >
+
+                <com.xiangxun.xacity.view.xlistView.XListView
+                    android:id="@+id/xlistview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@null"
+                    android:dividerHeight="2.0dp"
+                    android:listSelector="@color/transparent_white"
+                    android:padding="@dimen/margin_padding5"
+                    android:scrollbars="@null" />
+
+                <include layout="@layout/loading" />
+
+                <include layout="@layout/no_data" />
+            </ViewFlipper>
+        </LinearLayout>
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:layout_marginRight="@dimen/margin_padding20"
+        android:src="@drawable/xw_filter" />
+
+</RelativeLayout>

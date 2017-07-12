@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xiangxun.xacity.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_title" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 添加图片 -->
+
+            <include layout="@layout/publish_add_picture" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding10"
+                android:layout_marginLeft="@dimen/margin_padding10"
+                android:layout_marginRight="@dimen/margin_padding10"
+                android:layout_marginTop="@dimen/margin_padding10"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/publish_item_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_padding10"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_man"
+                        android:textColor="#757575"
+                        android:textSize="@dimen/textSize15" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_padding5"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/publish_click_selector"
+                            android:orientation="horizontal" >
+
+                            <View style="@style/full_ver_line_seperatorbyfublish" />
+
+                            <EditText
+                                android:id="@+id/tv_publish_user"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/margin_padding10"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:hint="请输入承接人信息(选填)"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:maxLength="15"
+                                android:background="@null"
+                                android:textColor="@color/color333333"
+                                android:textColorHint="#cccccc"
+                                android:textSize="@dimen/textSize15" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/publish_item_all_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_padding10"
+                        android:gravity="center_vertical"
+                        android:text="工单内容"
+                        android:textColor="#757575"
+                        android:textSize="@dimen/textSize15" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_padding5"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_publish_click_description"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/publish_click_selector"
+                            android:orientation="horizontal" >
+
+                            <View style="@style/full_ver_line_seperatorbyfublish" />
+
+                            <TextView
+                                android:id="@+id/tv_publish_description"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/margin_padding5"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:hint="请输入处理结果内容(必填)"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color333333"
+                                android:textColorHint="#cccccc"
+                                android:textSize="@dimen/textSize15" />
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="11dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/margin_padding10"
+                                android:background="@drawable/arrows" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_publish_description_tip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/publish_error_tip"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xiangxun.xacity.view.MyScrollView>
+    <!-- 浮层半透明 -->
+
+    <View
+        android:id="@+id/v_supernatant_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#50000000"
+        android:visibility="gone" >
+    </View>
+
+</RelativeLayout>

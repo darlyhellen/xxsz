@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView tree字段 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/group_item_rlt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:minHeight="40dip" >
+
+        <ImageView
+            android:id="@+id/ivExEc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/chbSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/common_body_checkbox"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/ivIcon"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:lines="1"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_expand_arrows"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/img_video"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="75dp"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/icon_video" />
+
+        <ImageButton
+            android:id="@+id/img_history_video"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@null"
+            android:focusable="false"
+            android:src="@drawable/icon_history_video" />
+    </RelativeLayout>
+
+</RelativeLayout>

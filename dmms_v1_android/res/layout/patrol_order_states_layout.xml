@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frabg"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_title"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:layout_marginLeft="@dimen/margin_padding10"
+        android:layout_marginRight="@dimen/margin_padding10"
+        android:layout_marginTop="@dimen/margin_padding10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_item_background"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_padding10"
+                android:gravity="center_vertical"
+                android:text="审核结果"
+                android:textColor="#757575"
+                android:textSize="@dimen/textSize15" />
+
+            <RadioGroup
+                android:id="@+id/rg_qualify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View style="@style/full_ver_line_seperatorbyfublish" />
+
+                <RadioButton
+                    android:id="@+id/cb_qualify"
+                    style="@style/checkbox_select_only_style"
+                    android:layout_marginLeft="@dimen/margin_padding10"
+                    android:checked="false"
+                    android:drawablePadding="@dimen/margin_padding8"
+                    android:text="合格" />
+
+                <RadioButton
+                    android:id="@+id/cb_unqualify"
+                    style="@style/checkbox_select_only_style"
+                    android:layout_marginLeft="@dimen/margin_padding20"
+                    android:checked="false"
+                    android:drawablePadding="@dimen/margin_padding8"
+                    android:text="不合格" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/publish_item_all_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_padding10"
+                android:gravity="center_vertical"
+                android:text="工单备注"
+                android:textColor="#757575"
+                android:textSize="@dimen/textSize15" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/publish_click_selector"
+                    android:orientation="horizontal" >
+
+                    <View style="@style/full_ver_line_seperatorbyfublish" />
+
+                    <EditText
+                        android:id="@+id/tv_publish_remark"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_padding5"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入工单备注"
+                        android:maxLength="150"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color333333"
+                        android:textColorHint="#cccccc"
+                        android:textSize="@dimen/textSize15" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_publish_description_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/publish_error_tip"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/toolbar_search" />
+
+    <ViewFlipper
+        android:id="@+id/vf_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 组织 -->
+
+        <ListView
+            android:id="@+id/elv_mine_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="true"
+            android:listSelector="@drawable/list_item_select"
+            android:scrollbars="none" />
+
+        <include layout="@layout/loading" />
+
+        <include layout="@layout/no_data" />
+        <!-- 组织通讯录 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_orange"
+                    android:padding="@dimen/margin_padding5"
+                    android:text="定位"
+                    android:textSize="@dimen/textSize15" />
+
+                <Button
+                    android:id="@+id/btn_path"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/margin_padding5"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_line_bule"
+                    android:padding="@dimen/margin_padding5"
+                    android:text="轨迹查询"
+                    android:textSize="@dimen/textSize15" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/xlistview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/location"
+                android:layout_weight="1"
+                android:divider="#aaa"
+                android:dividerHeight="1px"
+                android:listSelector="@color/transparent_white"
+                android:padding="@dimen/margin_padding5"
+                android:scrollbars="@null" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</LinearLayout>

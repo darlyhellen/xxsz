@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_title"
+        android:orientation="vertical" >
+
+        <!-- 添加图片 -->
+
+        <include layout="@layout/publish_add_picture" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_padding5"
+                android:text="延期开始时间:"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize14" />
+
+            <EditText
+                android:id="@+id/start_delay_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding5"
+                android:background="@drawable/edittext_selector"
+                android:focusable="false"
+                android:hint="请输入延期开始时间"
+                android:inputType="datetime"
+                android:paddingBottom="@dimen/margin_padding15"
+                android:paddingTop="@dimen/margin_padding15"
+                android:text=""
+                android:textColorHint="#b4b4b4"
+                android:textSize="@dimen/textSize14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_padding5"
+                android:text="延期结束时间:"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize14" />
+
+            <EditText
+                android:id="@+id/end_delay_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding5"
+                android:background="@drawable/edittext_selector"
+                android:focusable="false"
+                android:hint="请输入延期结束时间"
+                android:inputType="datetime"
+                android:paddingBottom="@dimen/margin_padding15"
+                android:paddingTop="@dimen/margin_padding15"
+                android:text=""
+                android:textColorHint="#b4b4b4"
+                android:textSize="@dimen/textSize14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:gravity="center_vertical"
+                android:text="@string/delay_remark"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize14" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding10"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/ll_publish_click_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_padding5"
+                    android:background="@drawable/edittext_selector"
+                    android:orientation="horizontal" >
+
+                    <View style="@style/full_ver_line_seperatorbyfublish" />
+
+                    <TextView
+                        android:id="@+id/tv_publish_description"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/margin_padding5"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/description_hint"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color333333"
+                        android:textColorHint="#cccccc"
+                        android:textSize="@dimen/textSize15" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="11dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_padding10"
+                        android:background="@drawable/arrows" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin_padding5"
+                android:text="延期原因:"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/xlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:listSelector="@color/transparent_white"
+                    android:scrollbars="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 浮层半透明 -->
+
+    <View
+        android:id="@+id/v_supernatant_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#50000000"
+        android:visibility="gone" >
+    </View>
+
+</RelativeLayout>

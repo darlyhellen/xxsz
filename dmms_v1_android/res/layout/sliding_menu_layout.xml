@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/tv_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="设备采购"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/qualified_supplier_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="合格供方名册"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/purchase_lease_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="采购租赁申请"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_equipment_acceptance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="设备验收"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/rent_equipment_ledger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="外租设备台账"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_contract_ledger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="合同台账"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="设备管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/device_operator_ledger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="操作人员台账"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_ledger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="设备台账"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/safety_protection_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="安全保护装置"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_dispatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="设备派遣"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_use_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="使用记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="设备到场验证"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/daily_inspection_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="日常检查记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/sound_utilization_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="完好利用率"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/Key_equipment_monthly_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_padding8"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="重点设备月报表"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/insurance_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="保险管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="设备维修"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/device_maintenance_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="设备维修计划"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_maintenance_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="维修工单"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/device_maintenance_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="维修记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/Accident_report_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="事故报告记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="设备报废"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/device_scrap_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="报废申请"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="备件油料"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding8"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/in_ledger_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="入库台账记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/out_ledger_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="出库台账记录"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/petrol_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="加油管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/material_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="领料申请"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="车辆定位"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding8"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/car_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="车辆定位"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

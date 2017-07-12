@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.xiangxun.xacity.view.TabTopView
+                android:id="@+id/tabtopView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_occupy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#87CEFA"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_padding5" >
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tv_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tv_weihu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/textSize14" />
+
+                        <TextView
+                            android:id="@+id/tv_yanqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/textSize14" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/xlistview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@id/ll_occupy"
+                        android:divider="@null"
+                        android:dividerHeight="2.0dp"
+                        android:listSelector="@color/transparent_white"
+                        android:padding="@dimen/margin_padding5"
+                        android:scrollbars="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <com.xiangxun.xacity.view.MyScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_padding5"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#87CEFA"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/margin_padding10"
+                                android:paddingLeft="@dimen/margin_padding5"
+                                android:paddingRight="@dimen/margin_padding5"
+                                android:paddingTop="@dimen/margin_padding10" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding5"
+                                    android:singleLine="true"
+                                    android:text="施工进度统计"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_occupy_progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:background="#ffffff"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_padding5" >
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#87CEFA"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/margin_padding10"
+                                android:paddingLeft="@dimen/margin_padding5"
+                                android:paddingRight="@dimen/margin_padding5"
+                                android:paddingTop="@dimen/margin_padding10" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding5"
+                                    android:singleLine="true"
+                                    android:text="施工类别统计"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_occupy_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="380dp"
+                                android:orientation="vertical"
+                                android:padding="@dimen/margin_padding5" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.xiangxun.xacity.view.MyScrollView>
+                </LinearLayout>
+            </ViewFlipper>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:choiceMode="singleChoice" >
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

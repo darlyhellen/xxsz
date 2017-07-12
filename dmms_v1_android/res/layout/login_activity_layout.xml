@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiangxun.xacity.view.TitleView
+        android:id="@id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding15" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_padding10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selecter_user"
+                android:visibility="gone" />
+
+            <com.xiangxun.xacity.view.ClearEditText
+                android:id="@+id/edt_user_acount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xw_edit_normal"
+                android:drawableLeft="@drawable/btn_selecter_user"
+                android:drawablePadding="@dimen/margin_padding10"
+                android:ems="10"
+                android:hint="@string/mine_login_hine1"
+                android:inputType="text"
+                android:text="chaotu"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_cecece"
+                android:textSize="@dimen/textSize17" >
+
+                <requestFocus />
+            </com.xiangxun.xacity.view.ClearEditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding10"
+            android:layout_marginTop="@dimen/margin_padding15"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_padding10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selecter_pwd"
+                android:visibility="gone" />
+
+            <com.xiangxun.xacity.view.ClearEditText
+                android:id="@+id/edt_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xw_edit_normal"
+                android:drawableLeft="@drawable/btn_selecter_pwd"
+                android:drawablePadding="@dimen/margin_padding10"
+                android:ems="10"
+                android:hint="@string/mine_login_hine2"
+                android:inputType="textPassword"
+                android:maxLength="19"
+                android:text="123456"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_cecece"
+                android:textSize="@dimen/textSize17" />
+        </LinearLayout>
+
+        <com.xiangxun.xacity.view.XSubButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height40"
+            android:layout_marginTop="@dimen/margin_padding40" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/more_about_text"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:layout_marginTop="@dimen/margin_padding20"
+        android:gravity="center_horizontal|bottom"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/splash_adv_logo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize14" />
+
+</LinearLayout>

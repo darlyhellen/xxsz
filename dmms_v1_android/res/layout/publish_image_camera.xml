@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拍照界面_王超 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/layoutSize70"
+    android:layout_height="@dimen/layoutSize70"
+    android:background="@color/transparent" >
+
+    <ImageView
+        android:id="@+id/iv_publish"
+        android:layout_width="@dimen/imageSize69"
+        android:layout_height="@dimen/imageSize69"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/imageSize15"
+        android:layout_height="@dimen/imageSize15"
+        android:layout_gravity="top|right"
+        android:background="@drawable/icon_delete" />
+
+</FrameLayout>

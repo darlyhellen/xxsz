@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_map_click_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_popup_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_padding10" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="设备名称:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="厢式皮卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="地址详情:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_address_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="SIM卡号 :"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_sim_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="号牌号码:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="资产编号:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_device_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="@string/operator_line"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="联系电话:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_tel_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="15991624055"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="产权单位:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="西郊养护公司生产经营部"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="设备当前时间:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/tv_location_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding5"
+                android:maxWidth="145.0dp"
+                android:singleLine="true"
+                android:text="2016-03-30 04:31:33"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

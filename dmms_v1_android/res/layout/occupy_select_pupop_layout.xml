@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_padding5"
+    android:background="@drawable/map_popup_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_occupy_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico0"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="已审批"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+    <View style="@style/full_line_white" />
+
+    <TextView
+        android:id="@+id/tv_occupy_builder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico1"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="施工中"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+    <View style="@style/full_line_white" />
+
+    <TextView
+        android:id="@+id/tv_occupy_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico2"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="维护中"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+    <View style="@style/full_line_white" />
+
+    <TextView
+        android:id="@+id/tv_occupy_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico3"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="已完工"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+    <View style="@style/full_line_white" />
+
+    <TextView
+        android:id="@+id/tv_occupy_overdeadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico4"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="已超期"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+    <View style="@style/full_line_white" />
+
+    <TextView
+        android:id="@+id/tv_occupy_deadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding8"
+        android:drawableLeft="@drawable/ico5"
+        android:drawablePadding="@dimen/margin_padding4"
+        android:gravity="center_vertical"
+        android:text="快到期"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15" />
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/tv_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="需求管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/materiel_demand_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="项目管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/materiel_demand_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="需求计划"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="采购管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/materiel_deman_purchases_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="需求单管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/materiel_purchases_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="采购单管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/materiel_supplier_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_padding8"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="外部供应商管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="工程监管"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/materiel_project_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="项目管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/supplier_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="供应商监管"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popuwindow_right_bg"
+                android:padding="@dimen/margin_padding8"
+                android:text="供应管理"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/textSize18"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/ll_device_menu04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding8"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/supplier_purchase_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="采购单管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/supplier_deliver_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="发货单管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/supplier_store_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="库存管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/supplier_in_storage_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="入库管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="170dp"
+                    android:layout_height="1px"
+                    android:background="@color/full_line" />
+
+                <TextView
+                    android:id="@+id/supplier_put_storage_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrows"
+                    android:paddingBottom="@dimen/margin_padding10"
+                    android:paddingLeft="@dimen/margin_padding20"
+                    android:paddingRight="@dimen/margin_padding8"
+                    android:paddingTop="@dimen/margin_padding10"
+                    android:text="出库管理"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/textSize15"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

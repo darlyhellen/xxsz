@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TimeLineView">
+        <attr name="TimeScaleTextPaddingTop" format="dimension"></attr>
+        <attr name="TimeScaleDateText" format="string"></attr>
+        <attr name="TimeScaleTimeText" format="string"></attr>
+        <attr name="TimeScaleTextSize" format="dimension"></attr>
+        <attr name="TimeScaleTextColor" format="reference|color"></attr>
+        <attr name="TimeScaleTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="TimeScaleLineColor" format="reference|color"></attr>
+        <attr name="TimeScaleLineWidth" format="dimension"></attr>
+        <attr name="TimeScaleLinePaddingLeft" format="dimension"></attr>
+        <attr name="TimeScaleLinePaddingRight" format="dimension"></attr>
+        <attr name="TimeScaleLinePaddingTop" format="dimension"></attr>
+        <attr name="TimeScaleLinePaddingBottom" format="dimension"></attr>
+        <attr name="TimeScaleUnitValue" format="dimension"></attr>
+        <attr name="TimeScaleUnitTextSize" format="dimension"></attr>
+        <attr name="TimeScaleUnitTextColor" format="reference|color"></attr>
+        <attr name="TimeScaleUnitTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="TimeScaleUnitPaddingLeft" format="dimension"></attr>
+        <attr name="TimeScaleUnitPaddingRight" format="dimension"></attr>
+        <attr name="TimeScaleUnitPaddingTop" format="dimension"></attr>
+        <attr name="TimeScaleUnitPaddingBottom" format="dimension"></attr>
+        <attr name="TimeScaleUnitMarkHeight" format="dimension"></attr>
+        <attr name="TimeScaleUnitMarkWidth" format="dimension"></attr>
+        <attr name="TimeScaleUnitMarkColor" format="reference|color"></attr>
+        <attr name="TimeScaleContentWidth" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_padding5"
+    android:paddingRight="@dimen/margin_padding5" >
+
+    <CheckBox
+        android:id="@+id/cb_device_name"
+        style="@style/checkbox_select_style"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding5"
+        android:text="设备名称"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/textSize17" />
+
+</LinearLayout>

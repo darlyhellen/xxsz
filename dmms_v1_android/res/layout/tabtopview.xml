@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height40"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/toptabview_left_rlyout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tabtopview_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/margin_padding15"
+                android:paddingRight="@dimen/margin_padding15"
+                android:text=""
+                android:textSize="@dimen/textSize15" />
+
+            <View
+                android:id="@+id/tabtopview_left_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2.0dp"
+                android:layout_alignLeft="@id/tabtopview_left_text"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@id/tabtopview_left_text"
+                android:layout_centerHorizontal="true"
+                android:background="@color/citylist_item_textcolor_frist"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toptabview_middle_llyout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="20.0dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/full_line" />
+
+            <RelativeLayout
+                android:id="@+id/toptabview_middle_rlyout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/tabtopview_middle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/margin_padding15"
+                    android:paddingRight="@dimen/margin_padding15"
+                    android:text=""
+                    android:textSize="@dimen/textSize15" />
+
+                <View
+                    android:id="@+id/tabtopview_middle_line"
+                    android:layout_width="60.0dp"
+                    android:layout_height="2.0dp"
+                    android:layout_alignLeft="@id/tabtopview_middle_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/tabtopview_middle_text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/citylist_item_textcolor_frist"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="20.0dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/full_line" />
+
+        <RelativeLayout
+            android:id="@+id/toptabview_right_rlyout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tabtopview_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/margin_padding15"
+                android:paddingRight="@dimen/margin_padding15"
+                android:text=""
+                android:textSize="@dimen/textSize15" />
+
+            <View
+                android:id="@+id/tabtopview_right_line"
+                android:layout_width="60.0dp"
+                android:layout_height="2.0dp"
+                android:layout_alignLeft="@id/tabtopview_right_text"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@id/tabtopview_right_text"
+                android:layout_centerHorizontal="true"
+                android:background="@color/citylist_item_textcolor_frist"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top_index"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/tabtopview_anim_line"
+            android:layout_width="0dp"
+            android:layout_height="2.0dp"
+            android:layout_weight="1"
+            android:background="@color/citylist_item_textcolor_frist" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/full_line" />
+
+</LinearLayout>
